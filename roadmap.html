@@ -2,22 +2,58 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Kovalev Evgeniy | Learning roadmap</title>
 
     <!-- ▼▼▼ Temporary internal CSS ▼▼▼ -->
     <style>
+
+      .cdt {
+        margin: 0 0 0 0;
+      }
+
+      .rec {
+        color: black;
+      }
+
+      .opt {
+        color: gray;
+      }
+
+      body {
+        background-color: #eeeeee;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+
       dl {
         margin: 0;
+        color: gray;
       }
+
       dt {
         margin: 1em 0 0 0;
       }
-      #idt {
-        margin: 0 0 0 0;
-      }
+
       dd {
-        margin: 0 0 0 1em;
+        margin: 0.2em 0 0 1em;
       }
+
+      a:link {
+        color: dodgerBlue;
+      }
+
+      a:visited {
+        color: black;
+      }
+
+      a:hover {
+        color: #3FB2FF;
+      }
+
+      a:active {
+        color: white;
+      }
+
     </style>
     <!-- ▲▲▲ Temporary internal CSS ▲▲▲ -->
 
@@ -27,12 +63,17 @@
     <p>&lt;-- <a href="index.html" title="Main Page">Back</a></p>
     <main>
       <h2>Front-End learning Roadmap</h2>
-      <p>
-        Legend:<br>
-        Learning in progress<br>
-        <s>Finished</s>
-      </p>
-      <dl>
+      <p>By <a href="https://twitter.com/kamranahmedse" target="_blank">Kamran Ahmed</a><br><a href="https://roadmap.sh" target="_blank">Original version</a></p>
+
+      <dl class="rec">
+        <dt>Legend:</dt>
+        <dd>Recomended</dd>
+        <dd class="opt">Options</dd>
+        <dd>Learning in progress</dd>
+        <dd><s>Finished</s></dd>
+      </dl>
+
+      <dl class="rec">
         <dt><strong><s>Basic prerequisite</s></strong></dt>
         <dd><s>Git - Version Control</s></dd>
         <dd><s>Basic Terminal Usage</s></dd>
@@ -47,18 +88,18 @@
         <dd><s>Character Encodings</s></dd>
       </dl>
 
-      <dl>
+      <dl class="rec">
         <dt><strong>HTML</strong></dt>
           <dd><s>Learn the basics</s></dd>
           <dd>Writing Semantic HTML</dd>
           <dd>Basic SEO</dd>
           <dd>Accessibility</dd>
 
-        <dt><strong>CSS</strong></dt>
-          <dd>Learn the basics</dd>
+        <dt class="rec"><strong>CSS</strong></dt>
+          <dd><s>Learn the basics</s></dd>
           <dd>
             <dl>
-              <dt id="idt">Making Layouts</dt>
+              <dt class="cdt">Making Layouts</dt>
                 <dd>Floats</dd>
                 <dd>Positioning</dd>
                 <dd>Display</dd>
@@ -70,80 +111,86 @@
           <dd>Media Queries</dd>
           <dd>Learn CSS 3</dd>
 
-        <dt><strong>Basics of JavaScript</strong></dt>
+        <dt class="rec"><strong>Basics of JavaScript</strong></dt>
           <dd>Syntax and Basic Constructs</dd>
           <dd>Learn DOM Manipulation</dd>
           <dd>Learn Fetch API / Ajax (XHR)</dd>
           <dd>ES6+ and modular JavaScript</dd>
-          <dd>Understand the concepts Hoisting, Event Bubbling, Scope Prototype, Shadow DOM, strict, <s>how browsers work</s>, <s>DNS</s>, <s>HTTP</s></dd>
+          <dd>Concepts: Hoisting, Event Bubbling, Scope Prototype, Shadow DOM, strict, <s>how browsers work</s>, <s>DNS</s>, <s>HTTP</s></dd>
 
-        <dt><strong>Package Managers</strong></dt>
-          <dd>yarn</dd>
-          <dd>npm</dd>
+        <dt class="rec"><strong>Package Managers</strong></dt>
+          <dd class="rec">yarn</dd>
+          <dd class="rec">npm</dd>
+          <dd><i>npm improved a lot, post v5+, but is still behind yarn in some features, nothing serious though. Pick any!</i></dd>
 
-        <dt><strong>CSS Pre-processors</strong></dt>
-          <dd>SASS</dd>
+        <dt class="rec"><strong>CSS Pre-processors</strong></dt>
+          <dd class="rec">SASS</dd>
           <dd>PostCSS</dd>
           <dd>Less</dd>
+          <dd><i>PostCSS is not a pre-processor but can be used as one. Go for SASS and revisit PostCSS later. There is still some Less in the market but I won't go for it if I was starting in 2019</i></dd>
 
-        <dt><strong>CSS Frameworks</strong></dt>
-          <dd>Bootstrap</dd>
+        <dt class="rec"><strong>CSS Frameworks</strong></dt>
+          <dd class="rec">Bootstrap</dd>
           <dd>Materialize CSS</dd>
           <dd>Bulma</dd>
           <dd>Semantic UI</dd>
 
-        <dt><strong>CSS Architecture</strong></dt>
-          <dd>BEM</dd>
+        <dt class="rec"><strong>CSS Architecture</strong></dt>
+          <dd class="rec">BEM</dd>
           <dd>OOCSS</dd>
           <dd>SMACSS</dd>
+          <dd><i>With modern front-end frameworks, there is more push towards CSS in JS methodologies with which you are not going to need these. However, you shoul still learn BEM at-least, which would prove helpful in the long run</i></dd>
 
-        <dt><strong>Build Tools</strong></dt>
+        <dt class="rec"><strong>Build Tools</strong></dt>
           <dd>
             <dl>
-              <dt id="idt">Linters and Formatters</dt>
-                <dd>Prettier</dd>
-                <dd>ESLint</dd>
+              <dt class="cdt rec">Linters and Formatters</dt>
+                <dd class="rec">Prettier</dd>
+                <dd class="rec">ESLint</dd>
                 <dd>JSHint</dd>
                 <dd>JSLint</dd>
                 <dd>JSCS</dd>
-              <dt id="idt">Task Runners</dt>
-                <dd>npm scripts</dd>
+              <dt class="cdt rec">Task Runners</dt>
+                <dd class="rec">npm scripts</dd>
                 <dd>gulp</dd>
-              <dt id="idt">Module Bundlers</dt>
-                <dd>Webpack</dd>
+              <dt class="cdt rec">Module Bundlers</dt>
+                <dd class="rec">Webpack</dd>
                 <dd>Parcel</dd>
                 <dd>Rollup</dd>
             </dl>
           </dd>
 
-        <dt><strong>Pick a Framework</strong></dt>
+        <dt class="rec"><strong>Pick a Framework</strong></dt>
           <dd>
             <dl>
-              <dt id="idt"> React.js</dt>
+              <dt class="cdt rec"> React.js</dt>
                 <dd>Redux</dd>
                 <dd>MobX</dd>
-              <dt id="idt">Angular</dt>
-                <dd>RxJS</dd>
-                <dd>ngrx</dd>
-              <dt id="idt">Vue.js</dt>
-                <dd>Vuex</dd>
+              <dt class="cdt">Angular</dt>
+                <dd class="rec">RxJS</dd>
+                <dd class="rec">ngrx</dd>
+              <dt class="cdt">Vue.js</dt>
+                <dd class="rec">Vuex</dd>
             </dl>
           </dd>
+          <dd><i>Before you start this, you should have a good understanding of what sibgle page applications are how they work and what are some of the positive and negative aspects of single page applications.</i></dd>
 
         <dt><strong>CS in JS</strong></dt>
-          <dd>Styled Components</dd>
-          <dd>CSS Modules</dd>
+          <dd class="rec">Styled Components</dd>
+          <dd class="rec">CSS Modules</dd>
           <dd>Emotion</dd>
           <dd>Radium</dd>
           <dd>Glamorous</dd>
 
         <dt><strong>Testing your Apps</strong></dt>
-          <dd>Jest</dd>
-          <dd>Enzyme</dd>
-          <dd>Cypress</dd>
-          <dd>Unit</dd>
-          <dd>Integration</dd>
-          <dd>Functional</dd>
+          <dd class="rec">Jest</dd>
+          <dd class="rec">Enzyme</dd>
+          <dd class="rec">Cypress</dd>
+          <dd><i>You can fulfill all your testing needs with these three</i></dd>
+          <dd class="rec">Unit</dd>
+          <dd class="rec">Integration</dd>
+          <dd class="rec">Functional</dd>
+          <dd><i>Understand different types of testing and learn how to write these with the above</i> </dd>
           <dd>Mocha</dd>
           <dd>Chai</dd>
           <dd>Ava</dd>
@@ -152,50 +199,54 @@
           <dd>Protractor</dd>
 
         <dt><strong>Progressive Web Apps</strong></dt>
-          <dd>Storage</dd>
-          <dd>Web Sockets</dd>
-          <dd>Service Workers</dd>
+          <dd class="rec">Storage</dd>
+          <dd class="rec">Web Sockets</dd>
+          <dd class="rec">Service Workers</dd>
           <dd>Location</dd>
           <dd>Notifications</dd>
           <dd>Device Orientation</dd>
           <dd>Payments</dd>
           <dd>Credentials</dd>
-          <dd>PRPL Pattern</dd>
-          <dd>RAIL Model</dd>
-          <dd>Performance Metrics</dd>
-          <dd>Using Light House</dd>
-          <dd>Using DevTools</dd>
+          <dd><i>Learn different Web APIs used in PWAs</i></dd>
+          <dd class="rec">PRPL Pattern</dd>
+          <dd class="rec">RAIL Model</dd>
+          <dd class="rec">Performance Metrics</dd>
+          <dd class="rec">Using Light House</dd>
+          <dd class="rec">Using DevTools</dd>
+          <dd>Calculating, Measuring and improving performance</dd>
 
-        <dt><strong>Type Checkers</strong></dt>
-            <dd>TypeScript</dd>
+        <dt class="rec"><strong>Type Checkers</strong></dt>
+            <dd class="rec">TypeScript</dd>
             <dd>Flow</dd>
 
         <dt><strong>Server Side Rendering</strong></dt>
           <dd>
             <dl>
-              <dt id="idt">React.js</dt>
-              <dd>Next.js</dd>
+              <dt class="cdt rec">React.js</dt>
+              <dd class="rec">Next.js</dd>
               <dd>After.js</dd>
-              <dt id="idt">Angular</dt>
+              <dt class="cdt">Angular</dt>
               <dd>Universal</dd>
-              <dt id="idt">Vue.js</dt>
+              <dt class="cdt">Vue.js</dt>
               <dd>Nuxt.js</dd>
             </dl>
           </dd>
 
         <dt><strong>Static Site Generators</strong></dt>
-          <dd>GatsbyJS</dd>
+          <dd class="rec">GatsbyJS</dd>
 
         <dt><strong>Desktop Applications</strong></dt>
-          <dd>Electron</dd>
+          <dd class="rec">Electron</dd>
           <dd>Proton Native</dd>
           <dd>Carlo</dd>
 
         <dt><strong>Mobile Applications</strong></dt>
-          <dd>React Native</dd>
+          <dd class="rec">React Native</dd>
           <dd>NativeScript</dd>
 
         <dt><strong>Web Assembly</strong></dt>
+
+        <dt class="rec">Keep Learning</dt>
       </dl>
     </main>
   </body>
