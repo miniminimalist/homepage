@@ -1,0 +1,103 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #000;
+  color: #ddd;
+}
+
+h1 {
+  background: -webkit-linear-gradient(0deg, dodgerBlue, #FF1E90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background-color: rgba(176, 196, 222, .5);
+  color: white;
+  padding: 20px 20px 30px 20px;
+  margin: 30px 0 0 0;
+}
+
+/* LINKS */
+a:link {
+  color: dodgerBlue;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #3FB2FF;
+}
+a:active {
+  color: white;
+}
+
+footer a:link {
+  color: white;
+}
+footer a:visited {
+  color: white;
+}
+footer a:hover {
+  color: #3FB2FF;
+}
+footer a:active {
+  color: white;
+}
+/* LINKSEND */
+
+.mainMenu {
+  padding: 1em 0 1em 3em;
+  width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
+  color: dodgerBlue;
+}
+
+.mainMenu a {
+  color: dodgerBlue;
+}
+.mainMenu a:hover {
+  color: #FF1E90;
+}
+
+.news {
+  color: lightSteelBlue;
+}
+
+/* roadmap.html */
+dl {
+  margin: 0 0 10px 0;
+  color: gray;
+}
+
+dt {
+  margin: 30px 0 0px 0;
+}
+
+dd dt {
+  margin: 0;
+}
+
+dd {
+  margin: 0 0 0 25px;
+}
+
+.rec {
+  color: white;
+}
+
+.opt {
+  color: gray;
+}
+
+.descr {
+  font-style: italic;
+  margin: 10px 0 15px 0;
+  color: white;
+}
+
+/* resources */
+li {
+  margin: 0 0 .5em 0;
+}

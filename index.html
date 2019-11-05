@@ -1,80 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleMain.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700&display=swap" rel="stylesheet">
     <title>Kovalev Evgeniy | Junior Front-End Developer</title>
-
-    <!-- ▼▼▼ Temporary internal CSS ▼▼▼ -->
-    <style>
-
-      .news {
-        color: gray;
-      }
-
-      body {
-        background-color: #eeeeee;
-        font-family: 'Roboto Condensed', sans-serif;
-      }
-
-      ul {
-        padding: 1em 0 1em 3em;
-        width: 12em;
-        border-style: solid;
-        border-width: 1px;
-      }
-
-      footer {
-        background-color: dimGray;
-        color: white;
-        padding: 1em;
-      }
-
-      a:link {
-        color: dodgerBlue;
-      }
-
-      a:visited {
-        color: black;
-      }
-
-      a:hover {
-        color: #3FB2FF;
-      }
-
-      a:active {
-        color: white;
-      }
-
-      footer a:link {
-        color: white;
-      }
-
-      footer a:visited {
-        color: white;
-      }
-
-      footer a:hover {
-        color: #3FB2FF;
-      }
-
-      footer a:active {
-        color: white;
-      }
-
-    </style>
-    <!-- ▲▲▲ Temporary internal CSS ▲▲▲ -->
 
   </head>
 
   <body>
 
-    <main>
+    <header>
       <h1>KOVALЁV EVGENIY PERSONAL WEBSITE</h1>
       <hr>
+    </header>
+
+    <main>
       <img src="img/photo.jpg" alt="Photo">
-      <p>Junior Front-End Developer</p>
-      <p>CG generalist</p>
+      <p><strong>Junior Front-End Developer</strong></p>
+      <p><b>CG generalist</b></p>
       <p>My <a href="https://github.com/miniminimalist" target="_blank" title="github.com/miniminimalist">GitHub</a> account,
       and <a href="https://www.freecodecamp.org/miniminimalist" target="_blank" title="freecodecamp.org/miniminimalist">freeCodeCamp</a> portfolio.</p>
       <p>Current position:<br>
@@ -83,22 +29,26 @@
       <p>E-mail: <a href="mailto:e.kovalev@expoglobalgroup.com" title="Feel free to write me">e.kovalev@expoglobalgroup.com</a></p>
       <p>Open to Taking a New Job with relocation from Russia Federation</p>
     </main>
-    <ul>
-      <li id="skills"><a href="#skills" title="Hard\Soft Skills List"><s>CV/Skills</s></a></li>
-      <li><a href="roadmap.html" title="Watch My Progress Online">Learning roadmap</a></li>
-      <li id="projects"><a href="#projects" title="WIP"><s>Projects</s></a> comming soon</li>
-      <li id="resources"><a href="resources.html" title="Usefull Stuff and Tools">Resources</a></li>
-      <li id="cgprojects"><a href="#cgprojects" title="Works from the Past"><s>CG Projects</s></a></li>
-    </ul>
-    <p class="news">2.11.19 /// Switch from PC to Mac</p>
-    <p class="news">29.10.19 ///Making stuff with .this</p>
-    <p class="news">28.10.19 ///<a href="basicHTML.html" title="HTML Experiments">Garbage collector</a></p>
-    <p class="news">127.0.0.1 ///Boltzmann brain</p>
 
-    <footer id="footer">
-      ver 0.0.4 -m 'Simple internal CSS +resources'. <a href="https://semver.org/" target="_blank" title="Semantic Versioning 2.0.0">Conventions</a> /// © Kovalev Evgeniy 2019 /// <a href="https://github.com/miniminimalist" target="_blank" title="github.com/miniminimalist">GitHub</a> <a href="https://www.freecodecamp.org/miniminimalist" target="_blank" title="freecodecamp.org/miniminimalist">freeCodeCamp</a> <a href="helloPenguin.html">Some Penguin</a>
+    <ul class="mainMenu">
+      <li><a href="#skills" title="Hard\Soft Skills List"><s>CV/Skills</s></a></li>
+      <li><a href="roadmap.html" title="Watch My Progress Online">Learning roadmap</a></li>
+      <li><a href="#projects" title="WIP"><s>Projects</s></a></li>
+      <li><a href="resources.html" title="Usefull Stuff and Tools">Resources</a></li>
+      <li><a href="#cgprojects" title="Works from the Past"><s>CG Projects</s></a></li>
+    </ul>
+
+    <div class="news">
+      <p>2.11.19 /// Switch from PC to Mac</p>
+      <p>29.10.19 ///Making stuff with .this</p>
+      <p>28.10.19 ///<a href="basicHTML.html" title="HTML Experiments">Garbage collector</a></p>
+      <p>127.0.0.1 ///Boltzmann brain</p>
+    </div>
+
+    <footer>
+      ver 0.0.5 -m 'External CSS +Black Magic!'. <a href="https://semver.org/" target="_blank" title="Semantic Versioning 2.0.0">Conventions</a> /// © Kovalev Evgeniy 2019 /// <a href="https://github.com/miniminimalist" target="_blank" title="github.com/miniminimalist">GitHub</a> <a href="https://www.freecodecamp.org/miniminimalist" target="_blank" title="freecodecamp.org/miniminimalist">freeCodeCamp</a> <a href="helloPenguin.html">Some Penguin</a>
     </footer>
-    <br>
+
   </body>
 
 </html>
