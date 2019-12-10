@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="FormaStyle.css">
+    <title>Forma 1.0</title>
+  </head>
+  <body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header>
+      <h1 id="title">DEAD OCEA CENTRAL</h1>
+      <p id="description">Cargo request</p>
+    </header>
+
+    <main>
+
+      <form id="survey-form">
+
+        <div>
+          <label id="name-label" for="name">Porter ID</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your ID"
+            required/>
+        </div>
+
+        <div>
+          <label id="email-label" for="email">CRD-Mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your mail"
+            required>
+        </div>
+
+        <div>
+          <label id="number-label" for="grade">Grade</label>
+          <input
+            type="number"
+            name="grade"
+            id="number"
+            min="10"
+            max="100"
+            placeholder="10+"
+            required>
+        </div>
+
+        <div>
+          <label for="role">DIRECTIVA</label>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Choose one</option>
+            <option value="BRIDGE">BRIDGE</option>
+            <option value="CARGO">CARGO</option>
+            <option value="VOLUME">VOLUME</option>
+            <option value="TIME">TIME</option>
+            <option value="MISC">MISC</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="standart" class="customRadio">Standart
+            <input id="standart"
+            type="radio"
+            name="difficulty"
+            value="standart"
+            checked>
+            <span class="radioMark"></span>
+          </label>
+          <label for="premial" class="customRadio">Premial
+            <input id="premial"
+            type="radio"
+            name="difficulty"
+            value="premial">
+            <span class="radioMark"></span>
+          </label>
+        </div>
+
+        <div>
+          <label for="addvol" class="customCheck">ADDVOL
+            <input
+              id="addvol"
+              type="checkbox"
+              name="add"
+              value="addvol">
+              <span class="checkMark"></span>
+          </label>
+          <label for="addtime" class="customCheck">ADDTIME
+            <input
+              id="addtime"
+              type="checkbox"
+              name="add"
+              value="addtime"
+              checked>
+              <span class="checkMark"></span>
+          </label>
+        </div>
+
+        <div>
+          <label id="promo" for="promo">CODA</label>
+          <input
+            type="text"
+            name="coda"
+            id="coda"
+            placeholder="*******"
+            required/>
+        </div
+
+        <div>
+          <p>RANDOM Generation</p>
+          <textarea
+            id="bigtext"
+            name="bigtext"
+            rows="8"
+            cols="60"
+            placeholder="148092i777710386387734317720754565i4532207770921201i905166096280490926360197598828161332i31666365286193266863360627i3567630354477628035045077i72355471i0585954870279081i4356240145171806246436267945i612753181340783303362542327839449753824372058i353114771199260i638133467768796959703098339130771i0987040859133746i4144282277263465947458784778720192771528073176790770715721344473060570073349243693113835"
+            ></textarea>
+        </div>
+
+        <div>
+          <button id="submit" type="submit">REPLACE</button>
+        </div>
+
+      </form>
+    </main>
+
+  </body>
+</html>
